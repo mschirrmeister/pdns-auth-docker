@@ -14,7 +14,7 @@ RUN apt-get update && apt-get -y dist-upgrade && apt-get clean \
        liblua5.3-dev \
        python3-venv \
     && apt-get clean \
-    && git clone --depth 1 -b auth-4.9.0 https://github.com/PowerDNS/pdns.git . \
+    && git clone --depth 1 -b auth-4.9.1 https://github.com/PowerDNS/pdns.git . \
     && git submodule init && git submodule update \
     && cp -p builder/helpers/set-configure-ac-version.sh /usr/local/bin \
     && mk-build-deps -i -t 'apt-get -y -o Debug::pkgProblemResolver=yes --no-install-recommends' /source/builder-support/debian/authoritative/debian-buster/control \

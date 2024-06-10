@@ -47,7 +47,7 @@ RUN apk add \
   flex \
   ragel \
   unixodbc \
-  && git clone --depth 1 -b auth-4.9.0 https://github.com/PowerDNS/pdns.git . \
+  && git clone --depth 1 -b auth-4.9.1 https://github.com/PowerDNS/pdns.git . \
   && git submodule init && git submodule update \
   && cp -p builder/helpers/set-configure-ac-version.sh /usr/local/bin
 
